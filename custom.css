@@ -232,25 +232,6 @@ p{
 
 }
 
-.arroww{
-	position: fixed;
-	bottom: 25px;
-	right: 25px;
-	width: 40px;
-	height: 40px;
-	line-height: 50px;
-	text-align: center;
-	cursor: pointer;
-	background: #fb2274;
-	border-radius: 50%;
-	display: none;
-}
-
-.arroww img{
-	width: 20px;
-	height: 20px;
-	z-index: 1;
-}
 
 
 }
