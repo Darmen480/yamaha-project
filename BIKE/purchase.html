@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	
+	<title>Purchase</title>
+	<link rel="stylesheet" type="text/css" href="purchase.css">
+	<script type="text/javascript" src="purchase.js"></script>
+</head>
+<body>
+        <header class="header">
+		<nav>
+			<ul>
+				<li style="list-style: none; display: inline"></li>
+				<li>
+					
+				</li>
+				<li style="list-style: none; display: inline"></li>
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+	        </ul>
+		</nav>
+    </header>
+    
+    <form name='purchase' onsubmit="return formValidation()" class="main">
+    	
+    	<ul>
+    		<li>
+    			<div class="title"><h1>Purchase with Us!</h1></div>
+           </li>
+    		<li><label>Name</label></li>
+    		<li><input type="text" name="name" required></li>
+
+    	
+
+    		<li><label>Residential Adress</label></li>
+    		<li><input type="letter" name="residentialaddress" required></li>
+
+
+    		<li><label>Zip Code</label></li>
+    		<li><input type="text" name="zipcode" required></li>
+
+
+    		<li><label>Email Adress</label></li>
+    		<li><input type="emailadress" name="emailadress" required></li>
+
+	<li><label>Motorcycles</label></li>
+    		<li><select name="motorcycles" required="">
+	        	<option value="" disabled selected>Choose Your Motorcycle</option>
+	        	
+				<option label="YAMAHA R1">YAMAHA R1</option>
+				<option label="YAMAHA R6">YAMAHA R6</option>
+				<option label="YAMAHA R3">YAMAHA R3</option>
+				<option label="YAMAHA MT-10/FZ-10">YAMAHA MT-10/FZ-10</option>	
+				<option label="YAMAHA FZ150i">YAMAHA FZ150i</option>
+			    
+				</select>		
+	        </li>
+
+
+    		<li><label>Home Number</label></li>
+    		<li><input type="text" name="number" required></li>
+
+
+    		<li><label>Contact Number</label></li>
+    		<li><input type="text" name="contact"required=></li>
+
+
+            <li><label>Payment Date</label></li>
+    		<li><input type="text" name="date" required></li>
+
+    		<li><label for="more">Let Us Know More!</label></li>
+			<li><textarea></textarea></li>
+
+    		<li><button type="submit">Submit</button></li>
+    	</ul>
+
+    	    </form>
+</body>
+</html>
