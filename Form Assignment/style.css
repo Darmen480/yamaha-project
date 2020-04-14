@@ -1,0 +1,199 @@
+ul{
+    list-style: none;
+}
+
+
+   span
+    {
+      color: purple;
+
+    }
+}
+.sec1 
+{
+    border-radius: 10px;
+    border: solid 1px blue;
+}
+.big-header1 > h4
+{
+    margin-top: 0px;
+    border-radius: 10px 10px 0px 0px;
+    background-color:yellow;
+    padding: 20px;  
+}
+.form1
+{
+    border-bottom: solid 1px grey;
+}
+
+.heading-2 > h4 
+{
+    margin-top: 0px;
+    padding: 20px;
+}
+.form-group2 > li 
+{
+    padding: 5px;
+}
+.form2 
+{
+    border-bottom: solid 1px grey;
+}
+.form3 
+{
+    border-bottom: solid 1px grey;
+}
+.heading-3 > h4 
+{
+    margin-top: 0px;
+    padding: 20px;
+
+}
+.heading-4 > h4 
+{
+    margin-top: 0px;
+    padding: 20px;
+
+}
+.part2
+{
+    border-radius: 10px;
+    margin-top: 20px;
+    border: solid 1px red;
+}
+.big-header2 > h4 
+{
+    margin-top: 0px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: purple;
+    padding: 20px;  
+}
+
+    
+}
+.part3 
+{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 1px rgb(41, 97, 161);
+}
+
+
+
+
+.big-header3 > h4
+{
+    background: lightgreen;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0px;
+    padding: 20px;
+    
+}
+
+table 
+{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+tbody > tr >td 
+{
+    padding: 5px;
+}
+.btn 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.btn > input 
+{
+    padding : 20px 345px 20px 345px;
+    background-color: orange ;
+    border-radius: 10px;
+    margin-left: 1111px;
+    margin-right: 1111px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+
+}
+
+@media (max-width: 500px)
+{
+    ul
+    {
+        list-style: none;
+    }
+    
+ 
+
+    .part1 
+    {
+        border-radius: 10px;
+        border: solid 1px blue;
+    }
+    
+    .form-1
+    {
+        border-bottom: solid 1px grey;
+    }
+    
+    .heading-2 > h4
+     {
+        margin-top: 0px;
+        padding: 20px;
+    }
+    .form-group2 > li
+     {
+        padding: 5px;
+        
+    }
+    .form-2
+     {
+        border-bottom: solid 1px grey;
+    }
+     .form-3
+     {
+        border-bottom: solid 1px grey;
+    }
+   
+    .heading-3 > h4 
+    {
+        margin-top: 0px;
+        padding: 20px;
+    
+    }
+    .heading-4 > h4 
+    {
+        margin-top: 0px;
+        padding: 20px;
+    
+    }
+  
+    table
+     {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    tbody > tr >td 
+    {
+        padding: 5px;
+    }
+    .btn 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .btn > input 
+    {
+        padding : 10px;
+        background-color: orange;
+        border-radius: 10px;
+    
+    }
+  
+    
+}

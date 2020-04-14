@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Enrolment Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <header>
+        <h1>Student Online Enrolment</h1>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>
+                 This form contains five (3) parts, 
+                  please fill out this form before submission.
+            </li>
+
+            <li>
+                The required fields are marked in red asterisk (<span>*</span>).
+            </li>
+
+            <li>
+                Kindly please check and make sure contact informations are correct, 
+                  our staff will use these information to get in touch with you.
+            </li>
+
+            <li>
+                No amendment is allowed to be done after you submit your application.
+            </li>
+        </ol>
+    </header>
+    <form name="Enrolment" onsubmit="return formValidation()">
+        <div class="sec1">
+        <div class="big-header1"><h4>Course Intakes</h4></div>
+        <div class="form1">
+        <ul class="form-group1">
+                        <li>Kindly choose the year of intake <span>*</span></li>
+                <li><label for="year_month">Year/Month</label></li>
+                <li>
+                    <input type="radio" name="intake" value="may">
+                    2020/Feb
+                    <input type="radio" name="intake" value="may">
+                    2020/May
+                </li>
+                </ul>
+                </div>
+
+               <div class="form2">
+                <div class="heading-2"><h4>Choices of Programmes</h4></div>
+                <ul class="form-group2">
+                    <li><label for="country">1st Choice <span>*</span></label></li>
+                    <li><select name="country" >
+                            <option selected="" value="Default">
+                                Click to choose
+                        </option>
+                        <option value="A">Diploma in Arts
+                            </option>
+                            <option value="MD">Diploma in Multimedia Designing</option>
+
+                            <option value="CM">Diploma in Chinese Medicine</option>
+
+                            <option value="EE">Diploma in Electronics Engineering</option>
+
+                            <option value="MC">Diploma in Mass Communication </option>
+                
+                            </select>
+                        </li>
+                    <li><label for="2ndchoice">2nd Choice <span>*</span></label></li>
+                    <li>
+                            <select name="2ndchoice">
+                                    <option selected="" value="Default">
+                                            Click to choose 
+                                        </option>
+                              <option value="CS">Diploma in Computer Science </option>
+
+                             <option value="BA">Diploma in Business Administration</option>
+
+                           <option value="IT">Diploma in Information Technology</option>
+
+                            <option value="PY">Diploma in Physiotherapy</option>
+
+                            <option value="AD">Diploma in Advertising Design</option>
+                                    
+                            </select>
+                        </li>
+
+                        <li><label for="3rdchoice">3rd Choice <span>*</span></label></li>
+                        <li>
+                                <select name="3rdchoice">
+                                        <option selected="" value="Default">
+                                                Click to choose
+                                            </option>
+                                            <option value="DM">Diploma in Marketing </option>
+
+                                            <option value="AD">Diploma in Advertising Design</option>
+
+                                            <option value="MD">Diploma in Multimedia Design</option>
+
+                                            <option value="IT">Diploma in Informatiom Technology</option>
+
+                                            <option value="CS">Diploma in Computer Science</option>
+                                </select>
+                            </li>
+
+                           </ul>
+
+            </div>
+
+            <div  class="form3">
+                <div class="heading-3"><h4>Accomodation<span>*</span></h4></div>
+                <ul class="form-group3">
+                    <li><label for="hostel">Hostel</label></li>
+                    <li><input type="radio" name="yes" value="yes">Yes</li>
+                    <li><input type="radio" name="no" value="no" >No</li>
+                </ul>
+                </div>
+
+                <div  class="form4">
+                    <div class="heading-4"><h4>Scholarship</h4></div>
+                    <ul class="form-group4">
+                        <li><label for="scholarship">Scholarship <span>*</span></label></li>
+                        <li>
+                            <select name="scholarship">
+                                <option value="Default" selected="">
+                                    None
+                                </option>
+
+                                <option value="excellentstudent">
+                                    Excellent student scholarship
+                                </option>
+
+                                <option value="newstudent">
+                                    New student scholarship
+                                </option>
+                            </select>
+                        
+                           </li>
+                           </ul>
+                          </div>
+        </div>
+        <div class="part2">
+            <div class="big-header2"><h4>Personal Information</h4></div>
+            <div class="form-5">
+                <ul class="form-group5">
+                    <li><label for="username">Name <span>*</span></label></li>
+                    <li>
+                        <input type="text" name="username" placeholder="Enter your name" size="50" required>
+                    </li>
+                    <li><label for="gender">Gender <span>*</span></label></li>
+                    <li>
+                        <input type="radio" name="msex" value="Male">
+                        Male
+                        <input type="radio" name="fsex" value="female">
+                        Female
+                    </li>
+                    <li><label for="dateofbirth">Date of Birth <span>*</span></label></li>
+                    <li><input type="date" name="dateofbirth" value="dateofbirth" required></li>
+                    <li><label for="country">Country<span>*</span></label></li>
+                    <li>
+                        <select name="Country">
+                            <option value="Default" selected="">
+                                Please select your country
+                            </option>
+                            <option value="Malaysian">Malaysian</option>
+
+                            <option value="Taiwanese">Taiwan</option>
+
+                            <option value="Singaporean">Singapore</option>
+
+                            <option value="Filipino">Phillipines</option>
+                        </select>
+                    </li>
+                    <li><label for="NRIC">NRIC No. <span>*</span></label></li>
+                    <li>
+                        <input type="text" name="NRIC" placeholder="000000-00-0000" required>
+                    </li>
+                    <li><label for="race">Race <span>*</span></label></li>
+                    <li>
+                        <select name="race">
+                            <option value="Default" selected="">
+                                Click to choose
+                            </option>
+                            <option value="my">Malay</option>
+
+                            <option value="ch">Chinese</option>
+
+                            <option value="in">Indian</option>
+
+                            <option value="otrs">Others</option>
+                        </select>
+                         </li>
+                         <li><label for="religion">Religion <span>*</span></label></li>
+                         <li>
+
+
+                        <select name="religion">
+                            <option value="Default" selected="">
+                                Click to choose
+                            </option>
+                            <option value="Buddhism">Buddhist</option>
+
+                            <option value="taoism">Muslim</option>
+
+                            <option value="hindu">Hindu</option>
+
+                            <option value="cat">Catholic</option>
+
+                            <option value="otrs">Others</option>
+                        </select>
+                        </li>
+
+
+                    <li><label for="homephone">Home Contact Number</label></li>
+
+                    <li><input type="text" name="homephone" placeholder="00-0000000"></li>
+
+                    <li><label for="ph">Mobile number <span>*</span></label></li>
+
+                    <li><input type="text" name="phone" required></li>
+
+                    <li><label for="address">Address <span>*</span></label></li>
+
+                    <li><input type="text" name="add" required></li>
+
+                    <li><input type="text" name="add"></li>
+
+                    <li><label for="area">Area <span>*</span></label></li>
+
+                    <li><input type="text" name="area" required></li>
+
+                    <li><label for="postcode">Postcode <span>*</span></label></li>
+
+                    <li><input type="text" name="postcode" required></li>
+
+                    <li><label for="state">State <span>*</span></label></li>
+                    <li>
+                        <select name="state">
+                            <option value="Default" selected="">
+                                Click to choose
+                            </option>
+                            <option value="JH">Johor</option>
+                            <option value="NS">Negeri Semilan</option>
+                            <option value="KL">Kuala Lumpur </option>
+                            <option value="PH">Pahang</option>
+                            <option value="SL">Selangor</option>
+                        </select>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+        
+
+                <div class="part3">
+                  <div class="big-header3"><h4>Certificates & Grades</h4></div>
+            <div class="form7">
+                <ul class="form-group7">
+                    <li><label for="certificates">Certificates<span>*</span></label></li>
+                    <li>
+                        <select name="certificates">
+                            <option value="Default" selected="">
+                                Click to choose
+                            </option>
+                            <option value="spm">SPM</option>
+                            <option value="alevel">A-Level</option>
+                            <option value="olevel">O-level</option>
+                        </select>
+                        </li>
+                        </ul>
+                         <table>
+                         <thead>
+
+                    <tr>
+                        <th>*</th>
+                        <th>Subject <span>*</span></th>
+                        <th>Grade <span>*</span></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>1.</td>
+                        <td>
+                            <select name="subject">
+                                <option value="Default" selected="">
+                                    Click to choose
+                                </option>
+                                <option value="BM">Bahasa Melayu</option>
+
+                                <option value="BI">Bahasa Inggeris</option>
+
+                                <option value="AM">Add-Maths</option>
+
+                                <option value="MT">Mathematics</option>
+
+                                <option value="SC">Science</option>
+
+                    
+                            </select>
+                            </td>
+
+                        <td>
+                            <select name="Gred" i>
+                               <option value="Default" selected="">
+                                    Click to choose
+                                </option>
+                                <option value="A+">A+</option>
+
+                                <option value="A">A</option>
+
+                                <option value="A-">A-</option>
+
+                                <option value="B+">B+</option>
+
+                                <option value="B">B</option>
+
+                                <option value="B-">B-</option>
+
+                                <option value="C+">C+</option>
+
+                                <option value="C">C</option>
+
+                                <option value="C-">C-</option>
+
+                                <option value="D">D</option>
+
+                                <option value="E">E</option>
+
+                                <option value="G">G+</option>
+
+                            </select>
+                            </td>
+                           </tr>
+                             <tr>
+                            <td>2.</td>
+                            <td>
+                                <select name="subject2">
+                                    <option value="Default" selected="">
+                                        Click to choose
+                                    </option>
+                                <option value="BM">Bahasa Melayu</option>
+
+                                <option value="BI">Bahasa Inggeris</option>
+
+                                <option value="AM">Add-Maths</option>
+
+                                <option value="MT">Mathematics</option>
+
+                                <option value="SC">Science</option>
+                                </select>
+                                </td>
+
+
+                            <td>
+                                <select name="gred2" i>
+                                   <option value="Default" selected="">
+                                        Click to choose
+                                    </option>
+                                    <option value="A+">A+</option>
+
+                                    <option value="A">A</option>
+
+                                    <option value="A-">A-</option>
+
+                                    <option value="B+">B+</option>
+
+                                    <option value="B">B</option>
+
+                                    <option value="B-">B-</option>
+
+                                    <option value="C+">C+</option>
+
+                                    <option value="C">C</option>
+
+                                    <option value="C-">C-</option>                                   
+
+                                    <option value="D">D</option>                                  
+
+                                    <option value="E">E</option>
+
+                                    <option value="G">G</option>
+    
+                                </select>
+                                </td>
+                                </tr>
+
+                          <tr>
+                                <td>3.</td>
+                                <td>
+                                    <select name="subject3">
+                                        <option value="Default" selected="">
+                                            Click to choose
+                                        </option>
+                                <option value="BM">Bahasa Melayu</option>
+
+                                <option value="BI">Bahasa Inggeris</option>
+
+                                <option value="AM">Add-Maths</option>
+
+                                <option value="MT">Mathematics</option>
+
+                                <option value="SC">Science</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="gred3" i>
+                                       <option value="Default" selected="">
+                                            Click to choose
+                                        </option>
+                                        <option value="A+">A+</option>
+
+                                        <option value="A">A</option>
+
+                                        <option value="A-">A-</option>
+
+                                        <option value="B+">B+</option>
+
+                                        <option value="B">B</option>
+
+                                        <option value="B-">B-</option>
+
+                                        <option value="C+">C+</option>
+
+                                        <option value="C">C</option>
+
+                                        <option value="C-">C-</option>
+
+                                        <option value="D">D</option>
+                                  
+                                        <option value="E">E</option>
+
+                                        <option value="G">G+</option>
+        
+                                    </select>
+                                    </td>
+                                    </tr>
+                                    <tr>
+
+                                    <td>4.</td>
+                                    <td>
+                                        <select name="subject4">
+                                            <option value="Default" selected="">
+                                                click to choose
+                                            </option>
+                                <option value="BM">Bahasa Melayu</option>
+
+                                <option value="BI">Bahasa Inggeris</option>
+
+                                <option value="AM">Add-Maths</option>
+
+                                <option value="MT">Mathematics</option>
+
+                                <option value="SC">Science</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="gred4" >
+                                           <option value="Default" selected="">
+                                                click to choose
+                                            </option>
+                                            <option value="A+">A+</option>
+
+                                            <option value="A">A</option>
+
+                                            <option value="A-">A-</option>
+
+                                            <option value="B+">B+</option>
+
+                                            <option value="B">B</option>
+
+                                            <option value="B-">B-</option>
+
+                                            <option value="C+">C+</option>
+
+                                            <option value="C">C</option>
+
+                                            <option value="C-">C-</option>
+
+                                            <option value="D">D</option>                                        
+
+                                            <option value="E">E</option>
+
+                                            <option value="G">G+</option>
+            
+                                        </select>
+                                        </td>
+                                        </tr>
+                                        <tr>
+
+
+                                        <td>5.</td>
+                                        <td>
+                                            <select name="subject5">
+                                                <option value="Default" selected="">
+                                                    click to choose
+                                                </option>
+                                <option value="BM">Bahasa Melayu</option>
+
+                                <option value="BI">Bahasa Inggeris</option>
+
+                                <option value="AM">Add-Maths</option>
+
+                                <option value="MT">Mathematics</option>
+
+                                <option value="SC">Science</option>
+
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="gred5">
+                                               <option value="Default" selected="">
+                                                    Click to choose
+                                                </option>
+                                                <option value="A+">A+</option>
+
+                                                <option value="A">A</option>
+
+                                                <option value="A-">A-</option>
+
+                                                <option value="B+">B+</option>
+
+                                                <option value="B">B</option>
+
+                                                <option value="B-">B-</option>
+
+                                                <option value="C+">C+</option>
+
+                                                <option value="C">C</option>
+
+                                                <option value="C-">C-</option>
+
+                                                <option value="D">D</option>
+
+                                                <option value="E">E</option>
+
+                                                <option value="G">G+</option>
+                
+                                            </select>
+                                        </td>
+                                        </tr>
+                                      </tbody>
+                                      </table>
+                                       </div>
+
+                                      </div>
+        <div class="btn">
+        <input  type="submit" name="submit" value="SUBMIT">
+        </div>
+        
+    </form>
+</body>
+</html>
